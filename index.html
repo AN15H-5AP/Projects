@@ -3,90 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Management Dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
+        <div class="sidebar">
             <div class="sidebar-header">
-                <h2>Secure Share</h2>
-                <p>secure@share.com</p>
+                <h2><i class="fas fa-cloud"></i> SekureBox</h2>
             </div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">My projects</a></li>
-                <li><a href="#">View all</a></li>
-                <li><a href="#">Recent</a></li>
-                <li><a href="#">Favorites</a></li>
-                <li><a href="#">Shared</a></li>
-                <li><a href="#">Archived</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Log out</a></li>
+                <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                <li><i class="fas fa-folder"></i> My Folder</li>
+                <li><i class="fas fa-heart"></i> Favorite</li>
+                <li><i class="fas fa-recycle"></i> Recycle Bin</li>
+                <li><i class="fas fa-share-alt"></i> Shared</li>
+                <li><i class="fas fa-cog"></i> Setting</li>
             </ul>
-        </aside>
-        <main class="main-content">
+            <div class="import-file">
+                <button><i class="fas fa-upload"></i> Import File</button>
+            </div>
+            <div class="logout">
+                <button><i class="fas fa-sign-out-alt"></i> Log-Out</button>
+            </div>
+        </div>
+        <div class="main-content">
             <header>
-                <h1>Welcome back</h1>
-                <div class="search-container">
-                    <input type="text" placeholder="Search">
-                    <button>🔍</button>
+                <h2>My Space</h2>
+                <div class="welcome-message">Hello Anish, Welcome back!</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search your file">
+                    <i class="fas fa-search"></i>
                 </div>
-                <button>Add File</button>
             </header>
-            <section class="actions">
-                <button>New document</button>
-                <button>New project</button>
-                <button>New team</button>
-                <button>New organization</button>
-            </section>
-            <section class="files">
-                <div class="file">
-                    <img src="placeholder.png" alt="3D renders">
-                    <div class="file-details">
-                        <p>3D renders</p>
-                        <p>92 MB</p>
+            <div class="dashboard">
+                <div class="card">
+                    <h3><i class="fas fa-image"></i> Images</h3>
+                    <p>14 GB</p>
+                    <p>1250 Files</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 25%;"></div>
                     </div>
                 </div>
-                <div class="file">
-                    <img src="placeholder.png" alt="Team photos">
-                    <div class="file-details">
-                        <p>Team photos</p>
-                        <p>168 MB</p>
+                <div class="card">
+                    <h3><i class="fas fa-file-alt"></i> Documents</h3>
+                    <p>12 GB</p>
+                    <p>1250 Files</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
                     </div>
                 </div>
-                <div class="file">
-                    <img src="placeholder.png" alt="UI presentations">
-                    <div class="file-details">
-                        <p>UI presentations</p>
-                        <p>265 MB</p>
+                <div class="card">
+                    <h3><i class="fas fa-video"></i> Media</h3>
+                    <p>10 GB</p>
+                    <p>1250 Files</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
                     </div>
                 </div>
-                <div class="file">
-                    <img src="placeholder.png" alt="Dark mode ideas">
-                    <div class="file-details">
-                        <p>Dark mode ideas</p>
-                        <p>196 MB</p>
-                    </div>
+            </div>
+            <div class="quick-access">
+                <h3>Quick Access</h3>
+                <div class="quick-access-files">
+                    <div class="file"><i class="fas fa-file-word"></i> Designbrief.DOCX</div>
+                    <div class="file"><i class="fas fa-file-pdf"></i> File Project.PDF</div>
+                    <div class="file"><i class="fas fa-file-image"></i> Product Photo.PNG</div>
                 </div>
-                <div class="file">
-                    <img src="placeholder.png" alt="Company retreat">
-                    <div class="file-details">
-                        <p>Company retreat</p>
-                        <p>1.29 GB</p>
-                    </div>
-                </div>
-                <div class="file">
-                    <img src="placeholder.png" alt="Dashboard 3.0 inspo">
-                    <div class="file-details">
-                        <p>Dashboard 3.0 inspo</p>
-                        <p>95 MB</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+            <div class="recent-uploads">
+                <h3>Recent Upload Files</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Owner</th>
+                            <th>Size</th>
+                            <th>Last Modified</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-file-alt"></i> Tugas Layout</td>
+                            <td>sallu bhai</td>
+                            <td>250MB</td>
+                            <td>July 25, 2024</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-file-pdf"></i> Design Brief Project</td>
+                            <td>gyane</td>
+                            <td>350MB</td>
+                            <td>July 21, 2024</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-file-image"></i> Product Photo</td>
+                            <td>Michael</td>
+                            <td>450MB</td>
+                            <td>July 20, 2024</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-file-pdf"></i> Resep Buka Puasa</td>
+                            <td>margirita</td>
+                            <td>150MB</td>
+                            <td>July 20, 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="profile">
+                <img src="./profile_pic.jpg" alt="Anish Sapkota">
+                <p>Anish Sapkota</p>
+                <p>anish@gmail.com</p>
+            </div>
+            <div class="file-details">
+                <h3>Detail</h3>
+                <img src="file-preview.jpg" alt="File Preview">
+                <p>Design Brief.DOCX</p>
+                <p>Type: Document</p>
+                <p>Size: 61.5 MB</p>
+                <p>Owner: Anish</p>
+                <p>Modified: July 20, 2024 by me</p>
+                <p>Opened: 12:56 AM by me</p>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

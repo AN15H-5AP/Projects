@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #34495e;
+}
+
+.import-file, .logout {
+    padding: 20px;
+    text-align: center;
+}
+
+.import-file button, .logout button {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.import-file button:hover, .logout button:hover {
+    background-color: #1abc9c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-message {
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.dashboard, .my-folder {
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background-color: #1abc9c;
+}
+
+.quick-access, .recent-uploads {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quick-access-files .file {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recent-uploads table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-uploads th, .recent-uploads td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.folder-view {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toolbar button {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toolbar button:hover {
+    background-color: #1abc9c;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar-right {
+    width: 200px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.file-details img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.file-details p {
+    margin: 10px 0;
+}
